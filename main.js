@@ -54,5 +54,20 @@
 		showSlide(currentSlide+1);
 	});
 
-	showSlide(0)
+	//showSlide(0)
+
+	jQuery("#faq_link").click(function () {
+
+
+		jQuery("#main_screen > div").hide();
+		jQuery("#faq_content").show();
+	});
+
+	jQuery("#when_link").click(function () {
+
+
+		jQuery("#main_screen > div").hide();
+		jQuery("#when_content").show();
+	});
+
 })})();
