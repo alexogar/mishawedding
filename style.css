@@ -7,7 +7,7 @@ html {
 body {
   /* Margin bottom by footer height */
   background:
-url('./from-misha/for site/Background.png'),
+url('./from-misha/for site/Background2.png'),
 url('./from-misha/for site/frameMultiply.png') no-repeat center 111px;
   background-blend-mode: multiply;
 }
@@ -74,7 +74,6 @@ url('./from-misha/for site/frameMultiply.png') no-repeat center 111px;
 
 .frame {
   height: 520px;
-  
 }
 
 .frame img {
@@ -88,7 +87,7 @@ url('./from-misha/for site/frameMultiply.png') no-repeat center 111px;
 .info_t {
   display: block;
   color: white;
-  width: 400px;
+  width: 600px;
   margin-left: 75px;
   /* margin-top: 38px; */
   height: 450px;
@@ -96,13 +95,10 @@ url('./from-misha/for site/frameMultiply.png') no-repeat center 111px;
   /* padding-top: 43px; */
   /* padding-bottom: 50px; */
 }
-.faq_b {
-  background: url('./from-misha/for site/quest/5.png');
-}
 
-
-.when_b {
-  background: url('./from-misha/for site/Last.png');
+.modal-content {
+  background-color: #2e7e6f;
+  color:white;
 }
 
 .info_b {  
@@ -113,4 +109,12 @@ url('./from-misha/for site/frameMultiply.png') no-repeat center 111px;
   height: 520px;
   padding-top: 40px;
   padding-bottom: 200px;
+}
+
+.quest_text {
+  background-color: #b2c7c3;
+  border-width: 2px;
+  border-style: solid;
+  width: 727px;
+  margin: auto;
 }
