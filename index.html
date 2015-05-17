@@ -4,10 +4,11 @@
 	<meta charset="UTF-8">
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="bower_components/components-bootstrap/css/bootstrap.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="bower_components/FlipCLock/compiled/flipclock.css" media="screen" />
 	<link rel="stylesheet" href="style.css">
 	<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
 	<script type="text/javascript" src="bower_components/components-bootstrap/js/bootstrap.js"></script>
-
+	<script type="text/javascript" src="bower_components/FlipClock/compiled/flipclock.js"></script>
 	<script type="text/javascript" src="main.js"></script>
 </head>
 <body>
@@ -30,6 +31,13 @@
 
 					<div id="beginning">
 						<img src="./from-misha/for site/Begin.png" alt="">
+
+						<div class="start_links">
+							<div>
+							<a href="javascript:void(0);" id="quest_link">НАЧАТЬ ПРИКЛЮЧЕНИЕ</a>
+							<a href="javascript:void(0);" id="skip_quest">ПРОПУСТИТЬ</a>
+							</div>
+						</div>
 					</div>
 
 					<div id="quest_start" class="slide" style="display:none">
@@ -257,12 +265,25 @@
 
 						<div class="quest_text">
 							Как только кольцо коснулось Олиного пальца оно стало холодным. Вокруг Оли закрутился вихрь зеленой дымки. Я почувствовал, что Оля еле держится на ногах, и подхватил ее. Наконец весь дым рассеялся. Мы стояли посреди залы, за окном выглянуло солнце. Оля крепко прижалась ко мне, и я обнял ее.
+							<a class="quest_int_link" ref="#quest_17" href="javascript:void(0);">Далее...</a>
+						</div>
+					</div>
+
+
+					<div id="quest_17" class="slide" style="display:none">
+						<img src="./from-misha/for site/quest/18.png"/>
+						<div class="quest_text">
+							Happy End!
 							<a class="quest_int_link" ref="#quest_end" href="javascript:void(0);">Далее...</a>
 						</div>
 					</div>
 
 					<div id="quest_end" class="slide" style="display:none">
-						<img src="./from-misha/for site/quest/18.png"/>
+						<img src="./from-misha/for site/quest/Last.png"/>
+
+						<div id="count_down" class="count_down">
+
+						</div>
 					</div>
 
 				</div>
@@ -296,11 +317,25 @@
 
 	<div class="col-md-4">
 		<div class="link">
-			<a id="quest_link" href="javascript:void(0);">
+			<a  href="javascript:void(0);"  data-toggle="modal" data-target="#formModal">
 				<img src="./from-misha/for site/DoNotPress.png" alt="НЕ НАЖИМАТЬ">
 			</a>
 		</div>
 	</div>
+</div>
+
+<div id="formModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog" style="width:790px">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">НУ ГОВОРИЛИ ЖЕ! НЕ НАЖИМАТЬ!</h4>
+			</div>
+			<div class="modal-body">
+				<iframe src="https://docs.google.com/forms/d/1o7zv8c--jMvV-5cjGndN12ONnEpsZcmiwoi5YTj6evE/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+		</div>
+	</div>
+
 </div>
 
 <div id="whenModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
