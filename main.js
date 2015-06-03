@@ -13,6 +13,10 @@
 		e.preventDefault();
 		var ref = jQuery(this).attr('ref');
 		change(jQuery(this).closest('.slide'), ref);
+
+		if (ref === '#quest_end') {
+			jQuery(".links").fadeIn();
+		}
 	});
 
 	jQuery(".quest_show_link").click(function() {
@@ -25,7 +29,6 @@
 		jQuery(".links").fadeOut(function(){
 			change("#beginning","#quest_start");
 		});
-
 	});
 
 	jQuery("#skip_quest").click(function() {
@@ -40,6 +43,8 @@
 
 	// Calculate the difference in seconds between the future and current date
 	var diff = Math.round(Math.abs((currentDate.getTime() - futureDate.getTime())/(oneDay)));
-
-	jQuery("#count_down").html("Осталось дней:"+diff);
+console.log(diff)
+	clock = new FlipClock(jQuery("#clock"), diff, {
+					clockFace: 'Counter'
+				});
 })})();

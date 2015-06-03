@@ -150,13 +150,18 @@ url('./from-misha/for site/frameMultiply.png') no-repeat center 111px;
 
 .count_down {
   position: absolute;
-  top: 50%;
+  top: 350px;
   font-family: 'myFirstFont';
   font-size: 30px;
   color: white;
   left: 50%;
-  width: 300px;
   line-height: 1px;
-  margin-left: 70px;
+  margin-left: 170px;
+  margin-top: 40px;
   text-align: center;
+}
+
+#clock {
+  zoom: 0.7;
+  -moz-transform: scale(0.7)
 }
