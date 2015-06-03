@@ -4,11 +4,11 @@
 	<meta charset="UTF-8">
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="bower_components/components-bootstrap/css/bootstrap.css" media="screen" />
-	<link rel="stylesheet" type="text/css" href="bower_components/FlipCLock/compiled/flipclock.css" media="screen" />
+
 	<link rel="stylesheet" href="style.css">
 	<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
 	<script type="text/javascript" src="bower_components/components-bootstrap/js/bootstrap.js"></script>
-	<script type="text/javascript" src="bower_components/FlipClock/compiled/flipclock.js"></script>
+
 	<script type="text/javascript" src="main.js"></script>
 </head>
 <body>
@@ -301,7 +301,7 @@
 <div class="links row">
 	<div class="col-md-4">
 		<div class="link">
-			<a id="when_link" data-toggle="modal" data-target="#whenModal" href="javascript:void(0);">
+			<a  data-toggle="modal" data-target="#whenModal" href="javascript:void(0);">
 				<img src="./from-misha/for site/whenwhere.png" alt="ГДЕ И КОГДА">
 			</a>
 		</div>
@@ -309,7 +309,7 @@
 
 	<div class="col-md-4">
 		<div class="link">
-			<a id="faq_link" data-toggle="modal" data-target="#faqModal" href="javascript:void(0);">
+			<a data-toggle="modal" data-target="#faqModal" href="#">
 				<img src="./from-misha/for site/FAQ.png" alt="ПОЛЕЗНАЯ ИНФОРМАЦИЯ">
 			</a>
 		</div>
@@ -317,14 +317,14 @@
 
 	<div class="col-md-4">
 		<div class="link">
-			<a  href="javascript:void(0);"  data-toggle="modal" data-target="#formModal">
+			<a  href="#formModal"  data-toggle="modal" data-target="#formModal">
 				<img src="./from-misha/for site/DoNotPress.png" alt="НЕ НАЖИМАТЬ">
 			</a>
 		</div>
 	</div>
 </div>
 
-<div id="formModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div id="formModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="formModal" aria-hidden="true">
 	<div class="modal-dialog" style="width:790px">
 		<div class="modal-content">
 			<div class="modal-header">
@@ -335,10 +335,10 @@
 				<iframe src="https://docs.google.com/forms/d/1o7zv8c--jMvV-5cjGndN12ONnEpsZcmiwoi5YTj6evE/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 		</div>
 	</div>
-
+</div>
 </div>
 
-<div id="whenModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div id="whenModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="whenModal" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-header">
@@ -364,7 +364,7 @@
 	</div>
 
 </div>
-<div id="faqModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div id="faqModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="faqModal" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-header">
