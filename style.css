@@ -22,7 +22,7 @@ url('./from-misha/for site/frameMultiply.png') no-repeat center 111px;
 
 @font-face {
     font-family: 'myFirstFont';
-    src: url(from-misha/for site/Fonts/J6MCS76G_0.ttf);
+    src: url('./from-misha/for site/Fonts/J6MCS76G_0.ttf');
 }
 
 /* Custom page CSS
@@ -139,7 +139,7 @@ url('./from-misha/for site/frameMultiply.png') no-repeat center 111px;
 .start_links a {
   text-decoration: none;
   color: white;
-  font-size: 14px;
+  font-size: 25px;
   font-family: 'myFirstFont';
 }
 
@@ -156,6 +156,7 @@ url('./from-misha/for site/frameMultiply.png') no-repeat center 111px;
   color: white;
   left: 50%;
   width: 300px;
+  line-height: 1px;
   margin-left: 70px;
   text-align: center;
 }
