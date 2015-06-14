@@ -39,7 +39,7 @@
 	var currentDate = new Date();
 	var oneDay = 24*60*60*1000;
 	// Set some date in the future. In this case, it's always Jan 1
-	var futureDate  = new Date(currentDate.getFullYear(), 8, 16);
+	var futureDate  = new Date(currentDate.getFullYear(), 7, 16);
 
 	// Calculate the difference in seconds between the future and current date
 	var diff = Math.round(Math.abs((currentDate.getTime() - futureDate.getTime())/(oneDay)));
